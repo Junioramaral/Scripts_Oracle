@@ -12,4 +12,5 @@ FROM
 WHERE
    b.sql_id = '&sqlid'
 AND
-   b.sql_id = a.sql_id;
+   b.sql_id = a.sql_id
+   order by b.position;
